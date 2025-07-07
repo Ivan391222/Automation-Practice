@@ -1,6 +1,6 @@
 SKILLO Automation Course
 
-This repository contains the final project of a test automation course for beginners The cases you will find below belong to an absolute beginner in the test automation universe. 
+This repository contains the final project of a test automation course for beginners. The cases you will find below belong to an absolute beginner in the test automation universe with a very distant knowledge of programming languages. 
 There are 5 automation test cases. Their names and what they include are as it follows:
 
 •	testcase1openBrowser - browser opening and closure
