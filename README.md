@@ -12,4 +12,5 @@ This repository contains the final project of the course. There are 5 automation
 
 •	testcase5followUser - user logs in, finds a certain profile of another user, opens it and follows / unfollows it, then opens a post of that user and likes it. The case is succesfull only in half of the executions.
 
-Disclaimer: There are upcoming updates...
+Disclaimer 1: Upcoming updates are possible
+Disclaimer 2: The style of the test cases is really really simple, as for a person with a very limited participation in the second part of the course
