@@ -1,18 +1,18 @@
 package org.ii.testcase1;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testcase3registration {
+public class testcase3registration extends BaseTest {
 
     @Test
     public void registration() throws InterruptedException {
-        WebDriver driver = new ChromeDriver();
 
         driver.get("http://training.skillo-bg.com:4300/users/login");
+        String realURL = driver.getCurrentUrl();
+        Assert.assertEquals("http://training.skillo-bg.com:4300/users/login", realURL);
         Thread.sleep(1000);
 
         WebElement registerButton = driver.findElement(By.linkText("Register"));
@@ -57,9 +57,7 @@ public class testcase3registration {
         //Sign UP
         WebElement SIGN_UP_BUTTON = driver.findElement(By.id("sign-in-button"));
         SIGN_UP_BUTTON.click();
-        //Thread.sleep(3000);
-
-        //driver.quit();
+        Thread.sleep(7000);
 
         System.out.println("Браво, бе, нашия, регистрира си се като пич!");
         System.out.println("Новото Ви потребителско име е " + username);
