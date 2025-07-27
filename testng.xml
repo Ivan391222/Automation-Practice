@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/iiivanov/Desktop/Automation/SKILLO_Final_Project">
+        <classes>
+            <class name="org.ii.testcase1.testcase1openBrowser">
+                <methods>
+                    <include name="openBrowser"/>
+                </methods>
+            </class>
+            <class name="org.ii.testcase1.testcase2loginFailed">
+                <methods>
+                    <include name="loginSkillo"/>
+                </methods>
+            </class>
+            <class name="org.ii.testcase1.testcase3registration">
+                <methods>
+                    <include name="registration"/>
+                </methods>
+            </class>
+            <class name="org.ii.testcase1.testcase4loginAndLogout">
+                <methods>
+                    <include name="loginLogutClose"/>
+                </methods>
+            </class>
+            <class name="org.ii.testcase1.testcase5followUser">
+                <methods>
+                    <include name="followAnotherUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
