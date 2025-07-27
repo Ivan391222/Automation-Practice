@@ -1,8 +1,6 @@
 package org.ii.testcase1;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -39,7 +37,6 @@ public class testcase5followUser extends BaseTest {
 
     @BeforeMethod
     public void browserSetup() {
-        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://training.skillo-bg.com:4300/users/login");
         PageFactory.initElements(driver, this);
