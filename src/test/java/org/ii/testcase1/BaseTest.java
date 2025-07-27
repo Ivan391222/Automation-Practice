@@ -6,11 +6,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 public class BaseTest {
     protected WebDriver driver;
@@ -38,8 +39,12 @@ public class BaseTest {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
         File screenshot = takesScreenshot.getScreenshotAs(OutputType.FILE);
         String testName = testResult.getName();
+
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+        String fileName = SCREENSHOTS_DIR + testName + "_" + timestamp + ".jpg";
+
         try {
-            FileUtils.copyFile(screenshot, new File(SCREENSHOTS_DIR + testName + ".jpg"));
+            FileUtils.copyFile(screenshot, new File(fileName));
         } catch (IOException e) {
             e.printStackTrace();
         }
