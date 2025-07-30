@@ -4,11 +4,11 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="AllTests">
         <classes>
-            <class name="org.ii.testcase1.testcase1openBrowser"/>
-            <class name="org.ii.testcase1.testcase2loginFailed"/>
-            <class name="org.ii.testcase1.testcase3registration"/>
-            <class name="org.ii.testcase1.testcase4loginAndLogout"/>
-            <class name="org.ii.testcase1.testcase5followUser"/>
+            <class name="org.ii.tests.testcase1openBrowser"/>
+            <class name="org.ii.tests.testcase2loginFailed"/>
+            <class name="org.ii.tests.testcase3registration"/>
+            <class name="org.ii.tests.testcase4loginAndLogout"/>
+            <class name="org.ii.tests.testcase5followUser"/>
         </classes>
     </test>
 </suite>
@@ -17,27 +17,27 @@
 <!--<suite name="All Test Suite">-->
 <!--    <test verbose="2" preserve-order="true" name="C:/Users/iiivanov/Desktop/Automation/SKILLO_Final_Project">-->
 <!--        <classes>-->
-<!--            <class name="org.ii.testcase1.testcase1openBrowser">-->
+<!--            <class name="org.ii.tests.testcase1openBrowser">-->
 <!--                <methods>-->
 <!--                    <include name="openBrowser"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-<!--            <class name="org.ii.testcase1.testcase2loginFailed">-->
+<!--            <class name="org.ii.tests.testcase2loginFailed">-->
 <!--                <methods>-->
 <!--                    <include name="loginSkillo"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-<!--            <class name="org.ii.testcase1.testcase3registration">-->
+<!--            <class name="org.ii.tests.testcase3registration">-->
 <!--                <methods>-->
 <!--                    <include name="registration"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-<!--            <class name="org.ii.testcase1.testcase4loginAndLogout">-->
+<!--            <class name="org.ii.tests.testcase4loginAndLogout">-->
 <!--                <methods>-->
 <!--                    <include name="loginLogutClose"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-<!--            <class name="org.ii.testcase1.testcase5followUser">-->
+<!--            <class name="org.ii.tests.testcase5followUser">-->
 <!--                <methods>-->
 <!--                    <include name="followAnotherUser"/>-->
 <!--                </methods>-->
