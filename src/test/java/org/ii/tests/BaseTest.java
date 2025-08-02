@@ -50,26 +50,4 @@ public class BaseTest {
             e.printStackTrace();
         }
     }
-
-
     }
-
-
-//    @AfterMethod(alwaysRun = true);
-//
-//    public void tearDown(ITestResult testResult) throws IOException {
-//        takeScreenshot(testResult);
-//        log.info("Bye bye driver");
-//        driver.quit();
-//    }
-//
-//    private void takeScreenshot(ITestResult testResult) throws IOException {
-//        if (ITestResult.FAILURE == testResult.getStatus()) {
-//            TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-//            File screenshot = takesScreenshot.getScreenshotAs(OutputType.FILE);
-//            String testName = testResult.getName();
-//
-//            FileUtils.copyFile(screenshot, new File(SCREENSHOTS_DIR.concat(testName).concat(".jpg")));
-//
-//        }
-
