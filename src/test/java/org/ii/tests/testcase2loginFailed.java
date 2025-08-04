@@ -11,6 +11,7 @@ public class testcase2loginFailed extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigateToLogin();
         loginPage.login("Ivan.", "pHunkYJ03.");
+        Thread.sleep(3000);
 
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("login"), "Потребителят не би трябвало да влезе успешно");
